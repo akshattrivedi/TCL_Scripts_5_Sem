@@ -18,6 +18,7 @@ public class new_server
                 while((str=contentRead.readLine())!=null)
                 {       
                         pwrite.println(str);
+//			pwrite.flush();
                 }       
                 sock.close();
                 sersock.close();

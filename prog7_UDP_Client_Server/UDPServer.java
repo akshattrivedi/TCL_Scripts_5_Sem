@@ -1,7 +1,7 @@
 import java.io.*;
 import java.net.*;
 public class UDPServer {
-	public static void main(String args[]) throws IOException {
+	public static void main(String args[]) throws Exception {
 //		byte addr[] = {10,2,20,64};
 		InetAddress clientIP = InetAddress.getLocalHost();
 		System.out.println("Client IP : " + clientIP);

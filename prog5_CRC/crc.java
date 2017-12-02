@@ -21,7 +21,7 @@ class crc
 	for(i=0;i<m-1;i++)
 		d[n+i]=0;
 	r=new int[m+n];
-	for(i=0;i<m;i++)
+	for(i=0;i<(m+n);i++)
 		r[i]=d[i];
 	z=new int[m];
 	for(i=0;i<m;i++)
@@ -38,7 +38,7 @@ class crc
 			r[j]=xor(r[j],g[k]);
 			k++;
 		}
-		r[m+i]=d[m+i];
+//		r[m+i]=d[m+i];
 	}
 	System.out.print("The code bits added are : ");
 	for(i=n;i<n+m-1;i++)
